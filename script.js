@@ -63,7 +63,7 @@
             clearInterval(intervalId);
             startTime = Date.now() - elapse;
             intervalId = setInterval(() => {startWatch();}, 1);
-            start.innerText ="resume";
+            start.innerText ="RESUME";
             isRunning = true
         }
     } )
@@ -80,8 +80,11 @@
         const li = document.createElement("li");
         const rank = document.createElement("div");
         const timeStamp = document.createElement("div");
-        li.classList.add("li");
-        li.classList.add("lap");
+
+        li.className = "flex justify-around  items-center w-80 sm:w-full bg-sky-300/20 text-white px-4 py-2 rounded-xl shadow border-b border-white mb-2";
+        rank.className = "text-lg font-bold text-1rem";
+        timeStamp.className = "text-lg";
+
 
 
         rank.innerText=`${lapcount+1}.`;
@@ -104,7 +107,7 @@
     stop.addEventListener("click", () =>{
         clearInterval(intervalId);
 
-        start.innerText = "start"
+        start.innerText = "START"
         watch.innerText=updateWatch(0);
         elapse = 0;
         paused = false;
