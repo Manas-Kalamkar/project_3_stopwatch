@@ -1,8 +1,8 @@
-# project_3_stopwatch
 
 # ⏱️ Stopwatch Web App
-
 A simple and responsive stopwatch web application built with **HTML**, **Tailwind CSS**, and **JavaScript**. It features a live clock, start/pause/resume, lap, and stop functionality.
+
+## Live Demo: https://manas-kalamkar.github.io/project_3_stopwatch/
 
 ## 🖼️ Features
 
